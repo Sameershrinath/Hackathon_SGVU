@@ -1,0 +1,307 @@
+body {
+  background-color: #90e0ef; /* Fallback background color */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  font-family: Bungee Outline;
+  font-weight: 900;
+  overflow: hidden;
+  animation: blur 0.5s ease-out;
+}
+  *{
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  #header {
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures header stays on top */
+    background-color: transparent; /* Ensure the background doesn't cover content */
+}
+
+#header_content {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+}
+
+#header img {
+    height: 80px; /* Adjust the height of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+#header h1 {
+    font-family: Arial, sans-serif; /* Use a clean, normal font */
+    font-size: 50px; /* Adjust font size to match the logo height */
+    color: #3f36e4; /* Change the text color to match your design */
+    margin: 0; /* Remove default margin */
+}
+  
+  #join_container{
+    width: 100%;
+    height: 200px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+    margin-top: 80px;
+  
+  }
+  #join_inner_container{
+    width: 50%;
+    height: 100%;
+  }
+  #join_input_container{
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+  }
+  #join_input{
+    width: 60%;
+    height: 40px;
+  
+    color: #1D3354;
+    font-family: Varela Round;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    background-color: Transparent;
+    border-bottom: 2px dashed #1D3354;
+  
+  }
+  #join_input:focus{
+    box-shadow: 0 10px 30px -17px #1D3354;
+  }
+  #join_button_container{
+    width: 100%;
+    height: 50px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+  }
+  #join_button{
+    width: 60%;
+    height: 40px;
+  
+    font-family: Varela Round;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #chat_container{
+    width: 100%;
+    height: 450px;
+  
+    display: flex;
+    justify-content: center;
+  
+    float: left;
+    margin-top: 40px;
+    /* Fade in container */
+    animation: fadeIn 1s linear;
+  
+  }
+  #chat_inner_container{
+    width: 40%;
+    height: 100%;
+  }
+  #chat_content_container {
+    width: 100%;
+    height: 90%;
+    float: left;
+    overflow-y: auto;
+    font-family: Varela Round;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #d8e2dc; /* Light background for contrast */
+    border: 2px solid #1D3354; /* Solid border to define the container */
+    border-radius: 10px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 10px; /* Adds space below the content container */
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+  #chat_input_container {
+    width: 100%;
+    height: calc(10% - 15px);
+    float: left;
+    border: 2px solid black; /* Black solid border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #d8e2dc;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Varela Round;
+    margin-top: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included within the width */
+}
+ #chat_input {
+    width: 95%;
+    height: 100%;
+    float: left;
+    background-color: Transparent;
+    color: #1D3354;
+    font-size: 15px;
+}
+
+#chat_input::placeholder {
+    color: rgb(13, 13, 13); /* Changes the placeholder text color to white */
+    opacity: 1; /* Ensures full opacity of the placeholder text */
+}
+
+  #chat_input_send {
+    width: 5%;
+    height: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: Transparent;
+    text-align: right;
+    color: #ddcc0b;
+    background-image: url("assets/send.png");
+    background-size: contain; /* Adjust the size of the image */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#chat_input_send.enabled {
+    color: #96df0f;
+    background-color: Transparent;
+    cursor: pointer;
+    background-image: url("assets/send.png");
+}
+
+  #chat_logout_container{
+    width: 100%;
+    display: inline-block;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    float: left;
+    margin-top: 20px;
+  }
+  #chat_logout{
+    color: #D64045;
+    cursor: pointer;
+  }
+  #chat_logout:hover{
+    text-decoration: underline;
+  }
+  .message_container{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 20px;
+  
+  }
+  .message_inner_container{
+    width: 100%;
+    display: inline-block;
+  
+    color: #1D3354;
+  }
+  .message_user_container{
+    width: 100%;
+    display: inline-block;
+  }
+  .message_user{
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .message_content_container{
+    width: 100%;
+    display: inline-block;
+  
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  .message_content{
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .enabled{
+    transition: background-color 0.5s;
+    color: #fff;
+    background-color: #D64045; /*#5B7553;*/
+    cursor: pointer;
+  }
+  #title_container.chat_title_container{
+    transition: 0.8s;
+    transition-timing-function: ease-in-out;
+    height: 100px;
+  }
+  #title.chat_title{
+    transition: 0.8s;
+    font-size: 47px;
+  }
+  .loader_container{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  
+    border-top: 6px solid #D64045;
+    border-bottom: 6px solid #1D3354;
+    border-left: 6px solid #E9FFF9;
+    border-right: 6px solid #E9FFF9;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes fadeIn {
+     0% {opacity: 0;}
+     100% {opacity: 1;}
+  }
+  @keyframes blur {
+    0% {filter: blur(5px);}
+    100% {}
+  }
+  ::selection {
+    background-color: #D64045;
+    color: #fff;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #cccs;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #D64045;
+    border-radius: 5px;
+  }
