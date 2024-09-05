@@ -1,4 +1,5 @@
-![UNIV Logo](https://i.ibb.co/F39v1V3/logo-icon.png)  # UNIV - University Social Platform
+# <img src="./dashboard/images/logo-icon.png" alt="UNIV Logo" width="100"/>  
+#  UNIV - University Social Platform
 
 Welcome to **UNIV**, a social platform designed to enhance the college experience by providing seamless interaction among students. Stay connected, join study groups, and participate in real-time chats, all through this app.
 
