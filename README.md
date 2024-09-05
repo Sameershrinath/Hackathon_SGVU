@@ -1,4 +1,4 @@
-# UNIV - University Social Platform
+![UNIV Logo](https://ibb.co/yPDTCSP)  # UNIV - University Social Platform
 
 Welcome to **UNIV**, a social platform designed to enhance the college experience by providing seamless interaction among students. Stay connected, join study groups, and participate in real-time chats, all through this app.
 
