@@ -6,13 +6,15 @@
     import {getFirestore,setDoc,doc} from "https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js";
   
 
+  // Replace the values below with your specific Firebase project details
   const firebaseConfig = {
-    apiKey: "AIzaSyDZZBQRgzw719H0DHXmZnTrLt0nqnFRAAk",
-    authDomain: "univ-ca8ea.firebaseapp.com",
-    projectId: "univ-ca8ea",
-    storageBucket: "univ-ca8ea.appspot.com",
-    messagingSenderId: "628733286190",
-    appId: "1:628733286190:web:717adcb90d5c1b473e4cbf"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "your-project-id.firebaseapp.com",
+    projectId: "your-project-id",
+    storageBucket: "your-project-id.firebasestorage.app",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID",
+    measurementId: "G-MEASUREMENT_ID"
   };
 
   const app = initializeApp(firebaseConfig);
