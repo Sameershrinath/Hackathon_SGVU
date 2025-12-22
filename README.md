@@ -58,10 +58,6 @@ Follow these steps to set up the UNIV app locally.
 
 - **Samir Srinath** - Frontend Manager
 - **Sumit Tak** - Backend Manager
-- **Sonu Maurya** - Team Member
-- **Akash Kumar** - Team Member
-- **Shweta Ray** - Team Member
-- **Sheetal Kumari** - Team Member
 
 ## Contact
 
